@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Produtos</title>
+    <script type="module" src="produtosEventosEDom.js"></script>
+</head>
+<body>
+   <header>
+        <a href="../../index.html">Home</a>
+        <h3>Produtos</h3>
+        <hr>
+   </header>
+   <main>
+        <section id="formulario">
+            <form id="form-produtos">
+                <input type="hidden" id="id">
+                <label for="descricao">Descrição: </label>
+                <input type="text" id="descricao" />
+                <label for="precoDeCusto">Preço de custo: </label>
+                <input type="number" id="precoDeCusto" step="0.1" />
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </form>
+            <hr>
+        </section>
+        <section id="tabela">
+            <table id="tbl-produtos" border="1">
+                <thead>
+                    <th>Id</th><th>Descrição</th>
+                    <th>Preço de custo</th>
+                </thead>
+                <tbody>
+                    <!-- aqui montaremos a tabela -->
+                </tbody>
+            </table>
+        </section>
+   </main> 
+</body>
+</html>
